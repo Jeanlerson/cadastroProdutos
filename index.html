@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <sectino id="cadastro">
+        <h1>Formulário</h1>
+        <div class="formBody">
+            <label>Nome do Produto:
+                <input type="text" id="nomeProduto" placeholder="Produto"/>
+            </label>
+            <label>Descrição do Produto:
+                <input type="text" id="descProduto" placeholder="Descrição"/>
+            </label>
+        </div>
+        <div class="vender">
+            <label>Valor do Produto:
+                <input type="number" id="valorProduto"/>
+            </label>
+            <div>
+                <h4>Disponível para venda:</h4>
+                <label>
+                    <input type="radio" id="sim" name="vender" value="sim"/>
+                    Sim
+                </label>
+                <label>
+                    <input type="radio" id="nao" name="vender" value="nao"/>
+                    Não
+                </label>
+            </div>
+        </div>
+        <div id="button">
+            <button id="buttonCadastrar">Cadastrar Produto</button>
+        </div>
+    </sectino>
+    <section id="listagem">
+        <h1>Listagem</h1>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>    
+            </tbody>
+        </table>
+    </section>
+    <footer>Criado por Jeanlerson Santos</footer>
+    
+    <script src="assets/script.js"></script>
+</body>
+</html>

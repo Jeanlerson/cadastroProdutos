@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cadastro, #listagem {
+    display: inline-block;
+    width: 500px;
+    background-color: #303099;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+h1 {
+    text-align: center;
+}
+.formBody label {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.vender {
+    display: flex;
+    justify-content: space-between;
+}
+.vender label, .vender h4 {
+    margin: 10px;
+}
+.vender #valorProduto {
+    width: 50px;
+}
+#button {
+    text-align: center;
+    margin-top: 30px;
+}
+#button #buttonCadastrar {
+    padding: 5px;
+    font-size: 15px;
+}
+#button #buttonCadastrar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+#listagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#listagem table {
+    margin-top: 20px;
+}
+#listagem table th {
+    padding: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #333;
+    font-size: 13px;
+}
+
+@media (max-width: 520px) {
+    #cadastro, #listagem {
+        max-width: 300px;
+    }
+    .vender {
+        flex-direction: column;
+    }
+}
