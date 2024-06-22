@@ -7,19 +7,19 @@
     <title>Formulário</title>
 </head>
 <body>
-    <sectino id="cadastro">
+    <form id="cadastro">
         <h1>Formulário</h1>
         <div class="formBody">
             <label>Nome do Produto:
-                <input type="text" id="nomeProduto" placeholder="Produto"/>
+                <input type="text" id="nomeProduto" placeholder="Produto" required/>
             </label>
             <label>Descrição do Produto:
-                <input type="text" id="descProduto" placeholder="Descrição"/>
+                <input type="text" id="descProduto" placeholder="Descrição" required/>
             </label>
         </div>
         <div class="vender">
             <label>Valor do Produto:
-                <input type="number" id="valorProduto"/>
+                <input type="number" id="valorProduto" required/>
             </label>
             <div>
                 <h4>Disponível para venda:</h4>
@@ -36,7 +36,7 @@
         <div id="button">
             <button id="buttonCadastrar">Cadastrar Produto</button>
         </div>
-    </sectino>
+    </form>
     <section id="listagem">
         <h1>Listagem</h1>
         <table border="2">

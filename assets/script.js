@@ -29,4 +29,20 @@ function addTable() {
 
 }
 
-buttonNewProduto.addEventListener('click', addTable)
+buttonNewProduto.addEventListener('click', function(validacao) {
+    validacao.preventDefault()
+
+    valorNomeProduto = inputNomeProduto.value.trim()
+    valorProduto = inputValorProduto.value
+    valorDescProduto = inputDescProduto.value.trim()
+
+    let formValido = true
+
+    if((valorNomeProduto === '') || (valorProduto === '') || (valorDescProduto === '')) {
+        alert('Preencha todo formulário e de forma correta')
+        formValido = false       
+    }
+    if(formValido) {
+        addTable()
+    }
+})
